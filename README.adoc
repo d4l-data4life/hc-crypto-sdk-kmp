@@ -41,11 +41,11 @@ endif::[]
         <a href="https://github.com/d4l-data4life/hc-crypto-sdk-kmp/releases">
             <img src="assets/images/badge-release-latest.svg" alt="Latest release"/>
         </a>
-        <a>
-            <img src="assets/images/badge-crypto-support.svg" alt="Crypto"/>
-        </a>
         <a href="https://github.com/d4l-data4life/hc-crypto-sdk-kmp/actions">
             <img src="https://github.com/d4l-data4life/hc-crypto-sdk-kmp/actions/workflows/d4l-ci-latest-version.yml/badge.svg" alt="D4L CI - Latest Version"/>
+        </a>
+        <a>
+            <img src="assets/images/badge-crypto-support.svg" alt="Crypto"/>
         </a>
         <a>
             <img src="assets/images/badge-platform-support.svg" alt="Platform"/>

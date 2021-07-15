@@ -32,6 +32,8 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 
 === Added
 
+* Add Serializable that got removed from HC Util SDK
+
 === Changed
 
 === Removed
@@ -41,6 +43,8 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 === Security
 
 === Bumped
+
+* HC Util SDK 1.7.0 -> 1.8.0
 
 === Deprecated
 

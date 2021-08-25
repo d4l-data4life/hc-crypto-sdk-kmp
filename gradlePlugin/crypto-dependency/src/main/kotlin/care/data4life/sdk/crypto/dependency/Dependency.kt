@@ -54,11 +54,16 @@ object Dependency {
         object D4L {
 
             val util = Util
+            val result = Result
 
             object Util {
                 const val common = "care.data4life.hc-util-sdk-kmp:util:${Version.multiplatform.d4l.utilSdk}"
                 const val android = "care.data4life.hc-util-sdk-kmp:util-android:${Version.multiplatform.d4l.utilSdk}"
                 const val jvm = "care.data4life.hc-util-sdk-kmp:util-jvm:${Version.multiplatform.d4l.utilSdk}"
+            }
+
+            object Result {
+                const val error = "care.data4life.hc-result-sdk-kmp:error:${Version.multiplatform.d4l.resultSdk}"
             }
         }
     }

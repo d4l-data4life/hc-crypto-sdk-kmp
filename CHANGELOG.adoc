@@ -33,6 +33,7 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 === Added
 
 * Add Serializable that got removed from HC Util SDK
+* Add HC Result SDK 0.2.0
 
 === Changed
 
@@ -44,7 +45,9 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 
 === Bumped
 
-* HC Util SDK 1.7.0 -> 1.8.0
+* HC Util SDK 1.7.0 -> 1.10.0
+* Gradle 6.9 -> 6.9.1
+* Android Gradle Plugin 4.2.1 -> 4.2.2
 
 === Deprecated
 

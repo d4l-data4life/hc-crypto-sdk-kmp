@@ -43,6 +43,7 @@ kotlin {
                 implementation(Dependency.multiplatform.kotlin.stdLib.common)
 
                 implementation(Dependency.multiplatform.d4l.util.common)
+                implementation(Dependency.multiplatform.d4l.result.error)
             }
         }
         val commonTest by getting {

@@ -114,7 +114,7 @@ A release branches of from `main` branch with following pattern:
 Add following changes:
 
 * Update CHANGELOG.adoc by creating a new Unreleased section and change current unreleased to release version
-* Update README.adoc `crypto-version` to release version
+* Update README.adoc `project-version` to release version
 * Update the latest release badge link:assets/images/badges.adoc[HowTo]
 
 Releases are automatically created when a tag in the form of `v{major}.{minor}.{patch}` is added.

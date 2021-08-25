@@ -2,7 +2,7 @@ build:
   - .github/**/*
 
 scripts:
-  - buildSrc/src/main/kotlin/carte/data4life/sdk/crypto/**/*.kts
+  - buildSrc/src/main/kotlin/care/data4life/sdk/crypto/**/*.kts
 
 dependencies:
   - buildSrc/**/*

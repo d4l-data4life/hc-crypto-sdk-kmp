@@ -19,15 +19,15 @@ pluginManagement {
         gradlePluginPortal()
         google()
     }
+
+    includeBuild(
+        "gradlePlugin/crypto-dependency"
+    )
 }
 
 plugins {
     id("com.gradle.enterprise") version("3.4.1")
 }
-
-includeBuild(
-    "gradlePlugin/crypto-dependency"
-)
 
 include(
     ":crypto"

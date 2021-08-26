@@ -14,31 +14,8 @@
  * contact D4L by email to help@data4life.care.
  */
 
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-    }
+package care.data4life.sdk.crypto.util
 
-    includeBuild(
-        "gradlePlugin/crypto-dependency"
-    )
-}
+import java.io.Serializable
 
-plugins {
-    id("com.gradle.enterprise") version("3.4.1")
-}
-
-include(
-    ":crypto"
-)
-
-buildCache {
-    local {
-        isEnabled = true
-        directory = File(rootDir, "build-cache")
-        removeUnusedEntriesAfterDays = 30
-    }
-}
-
-rootProject.name = "hc-crypto-sdk-kmp"
+actual typealias Serializable = Serializable

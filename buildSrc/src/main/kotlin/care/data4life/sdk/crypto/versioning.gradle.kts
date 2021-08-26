@@ -15,19 +15,19 @@
  */
 package care.data4life.sdk.crypto
 
-import com.palantir.gradle.gitversion.VersionDetails
+import care.data4life.gradle.gitversion.VersionDetails
 import org.gradle.kotlin.dsl.creating
 import org.gradle.kotlin.dsl.extra
 
 /**
- * Versioning task to calculate the version based on git tags and branch names using [Gradle Git Version](https://github.com/palantir/gradle-git-version)
+ * Versioning task to calculate the version based on git tags and branch names using [Gradle Git Version](https://github.com/d4l-data4life/gradle-git-version)
  *
  * Install:
  *
  * You need to add following dependencies to the buildSrc/build.gradle.kts
  *
  * dependencies {
- *     implementation("com.palantir.gradle.gitversion:gradle-git-version:0.12.3")
+ *     implementation("care.data4life.gradle.gitversion:gradle-git-version:0.12.4-d4l")
  * }
  *
  * and ensure that the gradlePluginPortal is available
@@ -55,7 +55,7 @@ import org.gradle.kotlin.dsl.extra
  * - ./gradlew versionInfo
  */
 plugins {
-    id("com.palantir.git-version")
+    id("care.data4life.git-version")
 }
 
 val versionDetails: groovy.lang.Closure<VersionDetails> by extra

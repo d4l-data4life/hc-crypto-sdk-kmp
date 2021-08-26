@@ -19,7 +19,7 @@ package care.data4life.sdk.crypto
 import care.data4life.sdk.crypto.Algorithm.Padding.NoPadding
 import care.data4life.sdk.crypto.Algorithm.Padding.OAEPPadding
 import care.data4life.sdk.crypto.Algorithm.Padding.PKCS7Padding
-import care.data4life.sdk.util.Serializable
+import care.data4life.sdk.crypto.util.Serializable
 
 open class Algorithm : Serializable {
 

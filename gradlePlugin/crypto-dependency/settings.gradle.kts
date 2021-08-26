@@ -13,32 +13,3 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
-
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-    }
-
-    includeBuild(
-        "gradlePlugin/crypto-dependency"
-    )
-}
-
-plugins {
-    id("com.gradle.enterprise") version("3.4.1")
-}
-
-include(
-    ":crypto"
-)
-
-buildCache {
-    local {
-        isEnabled = true
-        directory = File(rootDir, "build-cache")
-        removeUnusedEntriesAfterDays = 30
-    }
-}
-
-rootProject.name = "hc-crypto-sdk-kmp"

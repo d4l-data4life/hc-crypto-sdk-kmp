@@ -1,3 +1,5 @@
+import care.data4life.sdk.crypto.dependency.d4l
+
 /*
  * Copyright (c) 2021 D4L data4life gGmbH / All rights reserved.
  *
@@ -23,6 +25,7 @@ repositories {
     gradlePluginPortal()
     mavenCentral()
     google()
+    d4l()
 }
 
 dependencies {
@@ -39,5 +42,5 @@ dependencies {
     implementation("com.diffplug.spotless:spotless-plugin-gradle:5.10.2")
     implementation("com.pinterest:ktlint:0.41.0")
     // versioning.gradle.kts
-    implementation("com.palantir.gradle.gitversion:gradle-git-version:0.12.3")
+    implementation("care.data4life.gradle.gitversion:gradle-git-version:0.12.4-d4l")
 }

@@ -33,5 +33,8 @@ enum class KeyType {
     ATTACHMENT_KEY,
 
     @field:Json(name = "tek")
-    TAG_KEY
+    TAG_KEY,
+
+    @field:Json(name = "datadonation")
+    DATA_DONATION
 }

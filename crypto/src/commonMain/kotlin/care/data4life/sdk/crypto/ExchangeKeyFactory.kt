@@ -38,42 +38,51 @@ object ExchangeKeyFactory {
 
     private fun createPublicAppKey(encryptedAppPublicKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.APP_PUBLIC_KEY,
-            null,
-            encryptedAppPublicKeyBase64, null,
-            KeyVersion.VERSION_1
+            type = KeyType.APP_PUBLIC_KEY,
+            privateKey = null,
+            publicKey = encryptedAppPublicKeyBase64,
+            symmetricKey = null,
+            version = KeyVersion.VERSION_1
         )
     }
 
     private fun createCommonKey(encryptedCommonKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.COMMON_KEY, null, null,
-            encryptedCommonKeyBase64,
-            KeyVersion.VERSION_1
+            type = KeyType.COMMON_KEY,
+            privateKey = null,
+            publicKey = null,
+            symmetricKey = encryptedCommonKeyBase64,
+            version = KeyVersion.VERSION_1
         )
     }
 
     private fun createDataKey(encryptedDataKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.DATA_KEY, null, null,
-            encryptedDataKeyBase64,
-            KeyVersion.VERSION_1
+            type = KeyType.DATA_KEY,
+            privateKey = null,
+            publicKey = null,
+            symmetricKey = encryptedDataKeyBase64,
+            version = KeyVersion.VERSION_1
         )
     }
 
     private fun createAttachmentKey(encryptedAttachmentKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.ATTACHMENT_KEY, null, null,
-            encryptedAttachmentKeyBase64,
-            KeyVersion.VERSION_1
+            type = KeyType.ATTACHMENT_KEY,
+            privateKey = null,
+            publicKey = null,
+            symmetricKey = encryptedAttachmentKeyBase64,
+            version = KeyVersion.VERSION_1
         )
     }
 
     private fun createTagKey(encryptedTagKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.TAG_KEY, null, null,
-            encryptedTagKeyBase64,
-            KeyVersion.VERSION_1
+            type = KeyType.TAG_KEY,
+            privateKey = null,
+            publicKey = null,
+            symmetricKey = encryptedTagKeyBase64,
+            version = KeyVersion.VERSION_1
         )
     }
 }

@@ -58,7 +58,12 @@ class GCAESKeyAlgorithm private constructor(
     }
 
     companion object {
-        fun createDataAlgorithm() = GCAESKeyAlgorithm(Cipher.AES, Padding.NoPadding, BlockMode.GCM)
+        fun createDataAlgorithm() = GCAESKeyAlgorithm(
+            Cipher.AES,
+            Padding.NoPadding,
+            BlockMode.GCM
+        )
+
         fun createTagAlgorithm() = GCAESKeyAlgorithm(
             Cipher.AES,
             Padding.PKCS7Padding,

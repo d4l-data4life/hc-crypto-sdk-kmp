@@ -45,29 +45,29 @@ object Version {
             /**
              * [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
              */
-            const val coroutines = "1.4.3-native-mt"
+            const val coroutines = "1.5.1-native-mt"
 
             /**
              * [Serialization](https://github.com/Kotlin/kotlinx.serialization)
              */
-            const val serialization = "1.0.1"
+            const val serialization = "1.2.2"
 
             /**
              * [DateTime](https://github.com/Kotlin/kotlinx-datetime)
              */
-            const val dateTime = "0.1.1"
+            const val dateTime = "0.2.1"
         }
 
         object D4L {
             /**
              * [hc-util-sdk-kmp](https://github.com/d4l-data4life/hc-util-sdk-kmp)
              */
-            const val utilSdk = "1.10.0"
+            const val utilSdk = "1.11.0"
 
             /**
              * [hc-result-sdk-kmp](https://github.com/d4l-data4life/hc-result-sdk-kmp)
              */
-            const val resultSdk = "0.2.0"
+            const val resultSdk = "0.3.0"
         }
     }
 
@@ -120,7 +120,7 @@ object Version {
         /**
          * [Material Android](https://github.com/material-components/material-components-android)
          */
-        const val material = "1.3.0"
+        const val material = "1.4.0"
     }
 
     object AndroidTest {
@@ -134,6 +134,6 @@ object Version {
         /**
          * [Robolectric](https://github.com/robolectric/robolectric)
          */
-        const val robolectric = "4.5.1"
+        const val robolectric = "4.6.1"
     }
 }

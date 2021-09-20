@@ -15,7 +15,7 @@
  */
 
 import care.data4life.sdk.crypto.dependency.Dependency
-import care.data4life.sdk.crypto.LibraryConfig
+import care.data4life.gradle.crypto.config.LibraryConfig
 
 plugins {
     id("org.jetbrains.kotlin.multiplatform")
@@ -25,7 +25,7 @@ plugins {
     id("com.android.library")
 
     // Publish
-    id("care.data4life.sdk.crypto.publishing-config")
+    id("care.data4life.gradle.crypto.script.publishing-config")
 }
 
 group = LibraryConfig.group
@@ -146,7 +146,7 @@ android {
         )
     }
 
-    resourcePrefix(LibraryConfig.android.resourcePrefix)
+    resourcePrefix(care.data4life.gradle.crypto.config.LibraryConfig.android.resourcePrefix)
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

@@ -8,6 +8,7 @@ on:
       - feature/**
     paths:
       - '.github/labels.yml'
+  workflow_dispatch:
 
 jobs:
   configure-labels:

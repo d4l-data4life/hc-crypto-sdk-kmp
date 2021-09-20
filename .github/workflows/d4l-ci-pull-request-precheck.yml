@@ -9,6 +9,7 @@ on:
       - feature/*
       - bugfix/*
 
+
 jobs:
   pull-request-precheck:
 

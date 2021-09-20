@@ -89,15 +89,15 @@ object Dependency {
 
     object Jvm {
         // Crypto
-        const val bouncyCastleJdk15 = "org.bouncycastle:bcprov-jdk15on:${Version.Jvm.bouncyCastle}"
+        const val bouncyCastleJdk15 = "org.bouncycastle:bcprov-jdk15on:${Version.jvm.bouncyCastle}"
 
         // Serialization
-        const val moshi = "com.squareup.moshi:moshi:${Version.Jvm.moshi}"
-        const val moshiCodeGen = "com.squareup.moshi:moshi-kotlin-codegen:${Version.Jvm.moshi}"
+        const val moshi = "com.squareup.moshi:moshi:${Version.jvm.moshi}"
+        const val moshiCodeGen = "com.squareup.moshi:moshi-kotlin-codegen:${Version.jvm.moshi}"
     }
 
     object JvmTest {
-        const val junit = "junit:junit:${Version.JvmTest.jUnit}"
+        const val junit = "junit:junit:${Version.jvmTest.jUnit}"
     }
 
     object Android {

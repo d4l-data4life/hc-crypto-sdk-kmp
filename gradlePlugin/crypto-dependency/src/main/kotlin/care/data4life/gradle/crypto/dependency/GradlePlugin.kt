@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.crypto.dependency
+package care.data4life.gradle.crypto.dependency
 
 object GradlePlugin {
     const val android = "com.android.tools.build:gradle:${Version.GradlePlugin.android}"

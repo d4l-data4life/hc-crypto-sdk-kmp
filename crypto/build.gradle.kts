@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-import care.data4life.sdk.crypto.dependency.Dependency
+import care.data4life.gradle.crypto.dependency.Dependency
 import care.data4life.gradle.crypto.config.LibraryConfig
 
 plugins {
@@ -40,84 +40,84 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(Dependency.multiplatform.kotlin.stdLib.common)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatform.kotlin.stdLib.common)
 
-                implementation(Dependency.multiplatform.d4l.util.common)
-                implementation(Dependency.multiplatform.d4l.result.error)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatform.d4l.util.common)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatform.d4l.result.error)
             }
         }
         val commonTest by getting {
             dependencies {
-                implementation(Dependency.multiplatformTest.kotlin.common)
-                implementation(Dependency.multiplatformTest.kotlin.commonAnnotations)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.common)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.commonAnnotations)
 
-                implementation(Dependency.multiplatformTest.mockK.common)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.mockK.common)
             }
         }
 
         val androidMain by getting {
             dependencies {
-                implementation(Dependency.android.androidX.ktx)
-                implementation(Dependency.android.androidX.appCompat)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.android.androidX.ktx)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.android.androidX.appCompat)
 
-                implementation(Dependency.jvm.bouncyCastleJdk15)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.jvm.bouncyCastleJdk15)
 
-                implementation(Dependency.jvm.moshi)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.jvm.moshi)
                 configurations["kapt"].dependencies.add(
-                    project.dependencies.create(Dependency.jvm.moshiCodeGen)
+                    project.dependencies.create(care.data4life.gradle.crypto.dependency.Dependency.jvm.moshiCodeGen)
                 )
             }
         }
         val androidTest by getting {
             dependencies {
-                implementation(Dependency.multiplatformTest.kotlin.jvm)
-                implementation(Dependency.multiplatformTest.kotlin.jvmJunit)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.jvm)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.jvmJunit)
 
-                implementation(Dependency.multiplatformTest.mockK.junit)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.mockK.junit)
 
                 configurations["kaptTest"].dependencies.add(
-                    project.dependencies.create(Dependency.jvm.moshiCodeGen)
+                    project.dependencies.create(care.data4life.gradle.crypto.dependency.Dependency.jvm.moshiCodeGen)
                 )
 
-                implementation(Dependency.androidTest.robolectric)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.androidTest.robolectric)
             }
         }
         val androidAndroidTest by getting {
             dependsOn(androidMain)
             dependencies {
-                implementation(Dependency.multiplatformTest.kotlin.jvm)
-                implementation(Dependency.multiplatformTest.kotlin.jvmJunit)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.jvm)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.jvmJunit)
 
-                implementation(Dependency.multiplatformTest.mockK.junit)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.mockK.junit)
 
-                implementation(Dependency.androidTest.robolectric)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.androidTest.robolectric)
             }
         }
 
         val jvmMain by getting {
             dependencies {
-                implementation(Dependency.multiplatform.kotlin.stdLib.jdk8)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatform.kotlin.stdLib.jdk8)
 
-                implementation(Dependency.jvm.bouncyCastleJdk15)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.jvm.bouncyCastleJdk15)
 
-                implementation(Dependency.jvm.moshi)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.jvm.moshi)
                 configurations["kapt"].dependencies.add(
-                    project.dependencies.create(Dependency.jvm.moshiCodeGen)
+                    project.dependencies.create(care.data4life.gradle.crypto.dependency.Dependency.jvm.moshiCodeGen)
                 )
             }
         }
 
         val jvmTest by getting {
             dependencies {
-                implementation(Dependency.multiplatformTest.kotlin.jvm)
-                implementation(Dependency.multiplatformTest.kotlin.jvmJunit)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.jvm)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.kotlin.jvmJunit)
 
-                implementation(Dependency.multiplatformTest.mockK.junit)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.multiplatformTest.mockK.junit)
 
-                implementation(Dependency.jvm.bouncyCastleJdk15)
+                implementation(care.data4life.gradle.crypto.dependency.Dependency.jvm.bouncyCastleJdk15)
 
                 configurations["kaptTest"].dependencies.add(
-                    project.dependencies.create(Dependency.jvm.moshiCodeGen)
+                    project.dependencies.create(care.data4life.gradle.crypto.dependency.Dependency.jvm.moshiCodeGen)
                 )
             }
         }

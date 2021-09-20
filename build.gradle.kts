@@ -14,11 +14,11 @@
  * contact D4L by email to help@data4life.care.
  */
 
-import care.data4life.sdk.crypto.dependency.d4l
-import care.data4life.sdk.crypto.dependency.gitHub
+import care.data4life.gradle.crypto.dependency.d4l
+import care.data4life.gradle.crypto.dependency.gitHub
 
 plugins {
-    id("care.data4life.sdk.crypto.dependency")
+    id("care.data4life.gradle.crypto.dependency")
 
     id("care.data4life.gradle.crypto.script.dependency-updates")
     id("care.data4life.gradle.crypto.script.download-scripts")

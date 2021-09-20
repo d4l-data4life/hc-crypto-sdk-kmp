@@ -48,8 +48,9 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 === Bumped
 
 * HC Util SDK 1.7.0 -> 1.10.0
-* Gradle 6.9 -> 6.9.1
-* Android Gradle Plugin 4.2.1 -> 4.2.2
+* Gradle 6.9 ->> 7.2
+* *_BREAKING_* Kotlin 1.4.32 -> 1.5.21
+* *_BREAKING_* Android Gradle Plugin 4.2.2 -> 7.0.2
 
 === Migration
 

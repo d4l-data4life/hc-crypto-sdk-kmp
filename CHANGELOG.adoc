@@ -37,6 +37,8 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 
 === Changed
 
+=== Deprecated
+
 === Removed
 
 === Fixed
@@ -48,8 +50,6 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 * HC Util SDK 1.7.0 -> 1.10.0
 * Gradle 6.9 -> 6.9.1
 * Android Gradle Plugin 4.2.1 -> 4.2.2
-
-=== Deprecated
 
 === Migration
 

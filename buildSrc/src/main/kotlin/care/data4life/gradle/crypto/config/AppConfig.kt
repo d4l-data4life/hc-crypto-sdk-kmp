@@ -14,9 +14,22 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.crypto.dependency
+package care.data4life.gradle.crypto.config
 
-object GradlePlugin {
-    const val android = "com.android.tools.build:gradle:${Version.GradlePlugin.android}"
-    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.GradlePlugin.kotlin}"
+object AppConfig {
+
+    val android = AndroidConfig
+
+    const val group = LibraryConfig.group
+
+    object AndroidConfig {
+        const val minSdkVersion = LibraryConfig.AndroidLibraryConfig.minSdkVersion
+        const val compileSdkVersion = LibraryConfig.AndroidLibraryConfig.compileSdkVersion
+        const val targetSdkVersion = LibraryConfig.AndroidLibraryConfig.targetSdkVersion
+
+        const val versionCode = 1
+        const val versionName = "0.1.0"
+
+        const val applicationId = "$group.sample"
+    }
 }

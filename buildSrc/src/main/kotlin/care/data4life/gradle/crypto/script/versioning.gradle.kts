@@ -13,11 +13,10 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
-package care.data4life.sdk.crypto
+
+package care.data4life.gradle.crypto.script
 
 import care.data4life.gradle.gitversion.VersionDetails
-import org.gradle.kotlin.dsl.creating
-import org.gradle.kotlin.dsl.extra
 
 /**
  * Versioning task to calculate the version based on git tags and branch names using [Gradle Git Version](https://github.com/d4l-data4life/gradle-git-version)
@@ -36,10 +35,10 @@ import org.gradle.kotlin.dsl.extra
  *     gradlePluginPortal()
  * }
  *
- * Now just add id("care.data4life.sdk.crypto.versioning") to your rootProject build.gradle.kts plugins
+ * Now just add id("care.data4life.gradle.crypto.script.versioning") to your rootProject build.gradle.kts plugins
  *
  * plugins {
- *     id("care.data4life.sdk.crypto.versioning")
+ *     id("care.data4life.gradle.crypto.script.versioning")
  * }
  *
  * Usage:

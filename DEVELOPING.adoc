@@ -62,7 +62,7 @@ Just install the mentioned dependencies:
 
 [source,bash]
 ----
-sdk install java 8.0.292.hs-adpt
+sdk install java  8.0.292.hs-adpt
 sdk install kotlin 1.4.32
 ----
 
@@ -92,14 +92,14 @@ Every change has to branch of from `main` and use this branch naming convention:
 
 - *add* for new features or functionality
 - *change* for changes in existing features or functionality
-- *remove* | for removed features or functionality
+- *remove* for removed features or functionality
 - *fix* for any bug fixes
 - *bump* for dependency updates
 - *security* in case of vulnerabilities
 
 Examples:
 
-- `feature/NAT-456/add-awesome-hashing-algorithm`
+- `feature/SDK-456/add-awesome-hashing-algorithm`
 - `feature/add-awesome-hashing-algorithm`
 - `feature/remove-not-so-awesome-algorithm`
 - `feature/fix-algorithm-corner-case`
@@ -121,4 +121,4 @@ Releases are automatically created when a tag in the form of `v{major}.{minor}.{
 
 == Develop
 
-TODO
+Coming soon

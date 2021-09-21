@@ -1,4 +1,4 @@
-import care.data4life.sdk.crypto.dependency.d4l
+import care.data4life.gradle.crypto.dependency.d4l
 
 /*
  * Copyright (c) 2021 D4L data4life gGmbH / All rights reserved.
@@ -18,7 +18,7 @@ import care.data4life.sdk.crypto.dependency.d4l
 
 plugins {
     `kotlin-dsl`
-    id("care.data4life.sdk.crypto.dependency")
+    id("care.data4life.gradle.crypto.dependency")
 }
 
 repositories {
@@ -29,8 +29,8 @@ repositories {
 }
 
 dependencies {
-    implementation(care.data4life.sdk.crypto.dependency.GradlePlugin.kotlin)
-    implementation(care.data4life.sdk.crypto.dependency.GradlePlugin.android)
+    implementation(care.data4life.gradle.crypto.dependency.GradlePlugin.kotlin)
+    implementation(care.data4life.gradle.crypto.dependency.GradlePlugin.android)
 
     // dependency-updates.gradle.kts
     implementation("com.github.ben-manes:gradle-versions-plugin:0.38.0")

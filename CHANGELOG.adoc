@@ -26,14 +26,12 @@ Template could be found here: link:https://github.com/d4l-data4life/hc-readme-te
 
 toc::[]
 
+
 == link:{link-repository}/releases/latest[Unreleased]
 
-See link:{link-repository}/compare/v1.13.2...main[changeset]
+See link:{link-repository}/compare/v1.14.0...main[changeset]
 
 === Added
-
-* Add Serializable that got removed from HC Util SDK
-* Add HC Result SDK 0.2.0
 
 === Changed
 
@@ -47,8 +45,20 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 
 === Bumped
 
+=== Migration
+
+== link:{link-repository}/releases/tag/v1.14.0[1.14.0]
+
+See link:{link-repository}/compare/v1.13.2...v1.14.0[changeset]
+
+=== Added
+
+* Add Serializable that got removed from HC Util SDK
+* Add HC Result SDK 0.3.0
+
+=== Bumped
+
 * HC Util SDK 1.7.0 -> 1.11.0
-* HC Result SDK 0.2.0 -> 0.3.0
 * Gradle 6.9 -> 7.2
 * *_BREAKING_* Kotlin 1.4.32 -> 1.5.21
 * *_BREAKING_* Android Gradle Plugin 4.2.2 -> 7.0.2
@@ -57,8 +67,6 @@ See link:{link-repository}/compare/v1.13.2...main[changeset]
 * Kotlin date-time 0.1.1 -> 0.2.1
 * Android Material Components 1.3.0 -> 1.4.0
 * Robolectric 4.5.1 -> 4.6.1
-
-=== Migration
 
 == link:{link-repository}/releases/tag/v1.13.2[1.13.2]
 

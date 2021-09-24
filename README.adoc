@@ -1,6 +1,6 @@
 = Data4Life Crypto SDK
 :link-repository: https://github.com/d4l-data4life/hc-crypto-sdk-kmp
-:project-version: 1.13.2
+:project-version: 1.14.0
 :doctype: article
 :!showtitle:
 :toc: macro

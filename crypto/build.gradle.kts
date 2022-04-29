@@ -91,10 +91,6 @@ kotlin {
             }
         }
         val androidAndroidTest by getting {
-            dependsOn(androidAndroidTestRelease)
-            dependsOn(androidTestFixtures)
-            dependsOn(androidTestFixturesDebug)
-            dependsOn(androidTestFixturesRelease)
             dependsOn(androidMain)
             dependencies {
                 implementation(Dependency.multiplatformTest.kotlin.jvm)

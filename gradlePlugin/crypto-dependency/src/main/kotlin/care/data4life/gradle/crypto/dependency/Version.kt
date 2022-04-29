@@ -70,7 +70,7 @@ object Version {
         /**
          * [mockk](http://mockk.io)
          */
-        const val mockK = "1.10.6"
+        const val mockK = "1.12.3"
     }
 
     object Jvm {
@@ -78,7 +78,7 @@ object Version {
         /**
          * [BouncyCastle](http://www.bouncycastle.org/java.html)
          */
-        const val bouncyCastle = "1.64"
+        const val bouncyCastle = "1.71"
 
         // Serialization
         /**
@@ -98,24 +98,24 @@ object Version {
         /**
          * [Android Desugar](https://developer.android.com/studio/write/java8-support)
          */
-        const val androidDesugar = "1.0.9"
+        const val androidDesugar = "1.1.5"
 
         object AndroidX {
             /**
              * [AndroidX](https://developer.android.com/jetpack/androidx)
              */
             const val core = "1.1.0"
-            const val ktx = "1.3.2"
-            const val appCompat = "1.3.0"
-            const val browser = "1.2.0"
+            const val ktx = "1.7.0"
+            const val appCompat = "1.4.1"
+            const val browser = "1.4.0"
 
-            const val constraintLayout = "2.0.1"
+            const val constraintLayout = "2.1.3"
         }
 
         /**
          * [Material Android](https://github.com/material-components/material-components-android)
          */
-        const val material = "1.4.0"
+        const val material = "1.5.0"
     }
 
     object AndroidTest {
@@ -129,6 +129,6 @@ object Version {
         /**
          * [Robolectric](https://github.com/robolectric/robolectric)
          */
-        const val robolectric = "4.6.1"
+        const val robolectric = "4.7.3"
     }
 }

@@ -50,7 +50,7 @@ object Version {
             /**
              * [Serialization](https://github.com/Kotlin/kotlinx.serialization)
              */
-            const val serialization = "1.2.2"
+            const val serialization = "1.3.2"
 
             /**
              * [DateTime](https://github.com/Kotlin/kotlinx-datetime)

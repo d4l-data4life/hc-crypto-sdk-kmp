@@ -15,6 +15,7 @@
  */
 
 import care.data4life.gradle.crypto.dependency.d4l
+import care.data4life.gradle.crypto.dependency.ensureKotlinVersion
 import care.data4life.gradle.crypto.dependency.gitHub
 
 plugins {
@@ -35,6 +36,8 @@ allprojects {
         gitHub(project)
 
         d4l()
+
+        ensureKotlinVersion()
     }
 }
 

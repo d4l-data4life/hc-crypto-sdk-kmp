@@ -1,4 +1,5 @@
 import care.data4life.gradle.crypto.dependency.d4l
+import care.data4life.gradle.crypto.dependency.ensureKotlinVersion
 
 /*
  * Copyright (c) 2021 D4L data4life gGmbH / All rights reserved.
@@ -26,6 +27,7 @@ repositories {
     mavenCentral()
     google()
     d4l()
+    ensureKotlinVersion("1.5.31")
 }
 
 dependencies {

@@ -45,7 +45,7 @@ object Version {
             /**
              * [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
              */
-            const val coroutines = "1.5.1-native-mt"
+            const val coroutines = "1.6.0-native-mt"
 
             /**
              * [Serialization](https://github.com/Kotlin/kotlinx.serialization)

@@ -45,6 +45,8 @@ See link:{link-repository}/compare/v1.14.0...main[changeset]
 
 === Bumped
 
+Gradle 7.2 -> 7.4.2
+
 === Migration
 
 == link:{link-repository}/releases/tag/v1.14.0[1.14.0]

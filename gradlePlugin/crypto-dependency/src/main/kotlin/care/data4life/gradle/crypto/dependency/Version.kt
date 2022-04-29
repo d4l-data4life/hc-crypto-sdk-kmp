@@ -55,19 +55,14 @@ object Version {
             /**
              * [DateTime](https://github.com/Kotlin/kotlinx-datetime)
              */
-            const val dateTime = "0.2.1"
+            const val dateTime = "0.3.2"
         }
 
         object D4L {
             /**
              * [hc-util-sdk-kmp](https://github.com/d4l-data4life/hc-util-sdk-kmp)
              */
-            const val utilSdk = "1.11.0"
-
-            /**
-             * [hc-result-sdk-kmp](https://github.com/d4l-data4life/hc-result-sdk-kmp)
-             */
-            const val resultSdk = "0.3.0"
+            const val utilSdk = "1.12.0"
         }
     }
 
@@ -89,7 +84,7 @@ object Version {
         /**
          * [moshi](https://github.com/square/moshi)
          */
-        const val moshi = "1.12.0"
+        const val moshi = "1.13.0"
     }
 
     object JvmTest {

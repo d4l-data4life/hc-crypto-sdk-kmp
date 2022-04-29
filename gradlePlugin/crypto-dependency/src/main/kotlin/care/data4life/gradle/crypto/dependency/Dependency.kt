@@ -63,7 +63,7 @@ object Dependency {
             }
 
             object Result {
-                const val error = "care.data4life.hc-result-sdk-kmp:error:${Version.multiplatform.d4l.resultSdk}"
+                const val error = "care.data4life.hc-util-sdk-kmp:error:${Version.multiplatform.d4l.utilSdk}"
             }
         }
     }

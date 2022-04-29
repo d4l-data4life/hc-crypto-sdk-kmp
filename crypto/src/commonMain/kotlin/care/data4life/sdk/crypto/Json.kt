@@ -16,5 +16,5 @@
 
 package care.data4life.sdk.crypto
 
-expect annotation class Json(val name: String, val ignore: Boolean)
+expect annotation class Json(val name: String, val ignore: Boolean = false)
 expect annotation class JsonClass(val generateAdapter: Boolean, val generator: String = "")

@@ -63,7 +63,7 @@ object Dependency {
             }
 
             object Result {
-                const val error = "care.data4life.hc-result-sdk-kmp:error:${Version.multiplatform.d4l.resultSdk}"
+                const val error = "care.data4life.hc-util-sdk-kmp:error:${Version.multiplatform.d4l.utilSdk}"
             }
         }
     }
@@ -89,7 +89,7 @@ object Dependency {
 
     object Jvm {
         // Crypto
-        const val bouncyCastleJdk15 = "org.bouncycastle:bcprov-jdk15on:${Version.jvm.bouncyCastle}"
+        const val bouncyCastleJdk15 = "org.bouncycastle:bcprov-jdk18on:${Version.jvm.bouncyCastle}"
 
         // Serialization
         const val moshi = "com.squareup.moshi:moshi:${Version.jvm.moshi}"

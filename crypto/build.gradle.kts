@@ -68,7 +68,15 @@ kotlin {
                 )
             }
         }
+        val androidAndroidTestRelease by getting
+        val androidTestFixtures by getting
+        val androidTestFixturesDebug by getting
+        val androidTestFixturesRelease by getting
         val androidTest by getting {
+            dependsOn(androidAndroidTestRelease)
+            dependsOn(androidTestFixtures)
+            dependsOn(androidTestFixturesDebug)
+            dependsOn(androidTestFixturesRelease)
             dependencies {
                 implementation(Dependency.multiplatformTest.kotlin.jvm)
                 implementation(Dependency.multiplatformTest.kotlin.jvmJunit)
@@ -130,6 +138,7 @@ kotlin {
 
 android {
     compileSdk = LibraryConfig.android.compileSdkVersion
+    resourcePrefix = LibraryConfig.android.resourcePrefix
 
     defaultConfig {
         minSdk = LibraryConfig.android.minSdkVersion
@@ -140,8 +149,6 @@ android {
             mapOf("clearPackageData" to "true")
         )
     }
-
-    resourcePrefix(LibraryConfig.android.resourcePrefix)
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

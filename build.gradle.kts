@@ -15,6 +15,7 @@
  */
 
 import care.data4life.gradle.crypto.dependency.d4l
+import care.data4life.gradle.crypto.dependency.ensureKotlinVersion
 import care.data4life.gradle.crypto.dependency.gitHub
 
 plugins {
@@ -35,10 +36,12 @@ allprojects {
         gitHub(project)
 
         d4l()
+
+        ensureKotlinVersion()
     }
 }
 
 tasks.named<Wrapper>("wrapper") {
-    gradleVersion = "7.2"
+    gradleVersion = "7.4.2"
     distributionType = Wrapper.DistributionType.ALL
 }

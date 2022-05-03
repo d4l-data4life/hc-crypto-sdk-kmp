@@ -62,7 +62,7 @@ object Version {
             /**
              * [hc-util-sdk-kmp](https://github.com/d4l-data4life/hc-util-sdk-kmp)
              */
-            const val utilSdk = "1.12.0"
+            const val utilSdk = "1.13.0"
         }
     }
 
@@ -129,6 +129,6 @@ object Version {
         /**
          * [Robolectric](https://github.com/robolectric/robolectric)
          */
-        const val robolectric = "4.7.3"
+        const val robolectric = "4.8"
     }
 }

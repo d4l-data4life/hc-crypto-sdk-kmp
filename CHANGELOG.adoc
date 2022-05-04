@@ -29,7 +29,7 @@ toc::[]
 
 == link:{link-repository}/releases/latest[Unreleased]
 
-See link:{link-repository}/compare/v1.14.0...main[changeset]
+See link:{link-repository}/compare/v1.15.0\...main[changeset]
 
 === Added
 
@@ -39,11 +39,21 @@ See link:{link-repository}/compare/v1.14.0...main[changeset]
 
 === Removed
 
-* HC Result
-
 === Fixed
 
 === Security
+
+=== Bumped
+
+=== Migration
+
+== link:{link-repository}/releases/tag/v1.15.0[1.15.0]
+
+See link:{link-repository}/compare/v1.14.0\...v1.15.0[1.15.0]
+
+=== Removed
+
+* HC Result
 
 === Bumped
 
@@ -64,11 +74,9 @@ See link:{link-repository}/compare/v1.14.0...main[changeset]
 * Android Material 1.4.0 -> 1.5.0
 * Android Target SDK 30 -> 31
 
-=== Migration
-
 == link:{link-repository}/releases/tag/v1.14.0[1.14.0]
 
-See link:{link-repository}/compare/v1.13.2...v1.14.0[changeset]
+See link:{link-repository}/compare/v1.13.2\...v1.14.0[changeset]
 
 === Added
 

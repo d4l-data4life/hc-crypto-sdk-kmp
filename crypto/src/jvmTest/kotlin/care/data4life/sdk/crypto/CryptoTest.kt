@@ -17,10 +17,6 @@ package care.data4life.sdk.crypto
 
 import care.data4life.sdk.crypto.GCAESKeyAlgorithm.Companion.createDataAlgorithm
 import care.data4life.sdk.util.Base64.decode
-import org.bouncycastle.jce.provider.BouncyCastleProvider
-import org.junit.Assert
-import org.junit.Before
-import org.junit.Test
 import java.io.UnsupportedEncodingException
 import java.nio.charset.Charset
 import java.security.InvalidAlgorithmParameterException
@@ -35,6 +31,10 @@ import javax.crypto.IllegalBlockSizeException
 import javax.crypto.NoSuchPaddingException
 import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.SecretKeySpec
+import org.bouncycastle.jce.provider.BouncyCastleProvider
+import org.junit.Assert
+import org.junit.Before
+import org.junit.Test
 
 class CryptoTest {
     var algorithm: GCAESKeyAlgorithm? = null

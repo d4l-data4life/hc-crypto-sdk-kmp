@@ -16,12 +16,6 @@
 package care.data4life.sdk.crypto
 
 import care.data4life.sdk.util.Base64.decode
-import org.bouncycastle.jce.provider.BouncyCastleProvider
-import org.bouncycastle.util.io.pem.PemObject
-import org.bouncycastle.util.io.pem.PemWriter
-import org.junit.Assert
-import org.junit.Before
-import org.junit.Test
 import java.io.StringWriter
 import java.security.KeyFactory
 import java.security.KeyPairGenerator
@@ -29,6 +23,12 @@ import java.security.Security
 import java.security.spec.PKCS8EncodedKeySpec
 import java.security.spec.X509EncodedKeySpec
 import javax.crypto.Cipher
+import org.bouncycastle.jce.provider.BouncyCastleProvider
+import org.bouncycastle.util.io.pem.PemObject
+import org.bouncycastle.util.io.pem.PemWriter
+import org.junit.Assert
+import org.junit.Before
+import org.junit.Test
 
 class PemParserTest {
 

@@ -27,7 +27,7 @@ open class Algorithm : Serializable {
         internal set
     protected open var blockMode: String = NONE
     protected open val padding: String
-        get() = when (padding.toUpperCase()) {
+        get() = when (padding.uppercase()) {
             OAEP -> OAEPPadding.name
             PKCS7 -> PKCS7Padding.name
             else -> NoPadding.name

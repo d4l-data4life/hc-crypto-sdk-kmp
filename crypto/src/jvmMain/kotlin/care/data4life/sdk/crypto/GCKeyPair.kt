@@ -18,10 +18,10 @@ package care.data4life.sdk.crypto
 
 import care.data4life.sdk.crypto.util.Serializable
 import care.data4life.sdk.util.Base64
-import org.bouncycastle.asn1.pkcs.RSAPublicKey
 import java.security.KeyFactory
 import java.security.spec.PKCS8EncodedKeySpec
 import java.security.spec.RSAPublicKeySpec
+import org.bouncycastle.asn1.pkcs.RSAPublicKey
 
 actual class GCKeyPair actual constructor(
     val algorithm: GCRSAKeyAlgorithm,

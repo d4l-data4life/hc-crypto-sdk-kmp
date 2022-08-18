@@ -29,11 +29,11 @@ object Version {
     /**
      * [Kotlin](https://github.com/JetBrains/kotlin)
      */
-    const val kotlin = "1.6.10"
+    const val kotlin = "1.7.10"
 
     object GradlePlugin {
         const val kotlin = Version.kotlin
-        const val android = "7.1.3"
+        const val android = "7.2.2"
     }
 
     object Multiplatform {
@@ -45,17 +45,17 @@ object Version {
             /**
              * [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
              */
-            const val coroutines = "1.6.0-native-mt"
+            const val coroutines = "1.6.3-native-mt"
 
             /**
              * [Serialization](https://github.com/Kotlin/kotlinx.serialization)
              */
-            const val serialization = "1.3.2"
+            const val serialization = "1.3.3"
 
             /**
              * [DateTime](https://github.com/Kotlin/kotlinx-datetime)
              */
-            const val dateTime = "0.3.2"
+            const val dateTime = "0.4.0"
         }
 
         object D4L {
@@ -70,7 +70,7 @@ object Version {
         /**
          * [mockk](http://mockk.io)
          */
-        const val mockK = "1.12.3"
+        const val mockK = "1.12.5"
     }
 
     object Jvm {
@@ -105,17 +105,17 @@ object Version {
              * [AndroidX](https://developer.android.com/jetpack/androidx)
              */
             const val core = "1.1.0"
-            const val ktx = "1.7.0"
-            const val appCompat = "1.4.1"
+            const val ktx = "1.8.0"
+            const val appCompat = "1.5.0"
             const val browser = "1.4.0"
 
-            const val constraintLayout = "2.1.3"
+            const val constraintLayout = "2.1.4"
         }
 
         /**
          * [Material Android](https://github.com/material-components/material-components-android)
          */
-        const val material = "1.5.0"
+        const val material = "1.6.1"
     }
 
     object AndroidTest {
@@ -129,6 +129,6 @@ object Version {
         /**
          * [Robolectric](https://github.com/robolectric/robolectric)
          */
-        const val robolectric = "4.8"
+        const val robolectric = "4.8.1"
     }
 }

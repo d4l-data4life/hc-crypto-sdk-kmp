@@ -16,7 +16,6 @@
 
 package care.data4life.sdk.crypto
 
-import org.bouncycastle.jce.provider.BouncyCastleProvider
 import java.security.InvalidAlgorithmParameterException
 import java.security.InvalidKeyException
 import java.security.KeyPairGenerator
@@ -30,6 +29,7 @@ import javax.crypto.IllegalBlockSizeException
 import javax.crypto.KeyGenerator
 import javax.crypto.NoSuchPaddingException
 import javax.crypto.spec.IvParameterSpec
+import org.bouncycastle.jce.provider.BouncyCastleProvider
 
 actual abstract class CryptoProtocol {
 

@@ -1,3 +1,4 @@
+/* ktlint-disable filename */
 /*
  * Copyright (c) 2021 D4L data4life gGmbH / All rights reserved.
  *
@@ -16,13 +17,13 @@
 
 package care.data4life.sdk.crypto
 
-import org.bouncycastle.util.io.pem.PemReader
 import java.io.StringReader
 import java.security.KeyFactory
 import java.security.PublicKey
 import java.security.interfaces.RSAPrivateCrtKey
 import java.security.spec.PKCS8EncodedKeySpec
 import java.security.spec.RSAPublicKeySpec
+import org.bouncycastle.util.io.pem.PemReader
 
 /**
  * Convert a string encoding a private key in PEM format to a GCKeyPair.

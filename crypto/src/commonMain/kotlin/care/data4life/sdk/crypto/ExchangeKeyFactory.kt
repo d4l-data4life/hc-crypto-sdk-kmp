@@ -40,14 +40,17 @@ object ExchangeKeyFactory {
         return ExchangeKey(
             KeyType.APP_PUBLIC_KEY,
             null,
-            encryptedAppPublicKeyBase64, null,
+            encryptedAppPublicKeyBase64,
+            null,
             KeyVersion.VERSION_1
         )
     }
 
     private fun createCommonKey(encryptedCommonKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.COMMON_KEY, null, null,
+            KeyType.COMMON_KEY,
+            null,
+            null,
             encryptedCommonKeyBase64,
             KeyVersion.VERSION_1
         )
@@ -55,7 +58,9 @@ object ExchangeKeyFactory {
 
     private fun createDataKey(encryptedDataKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.DATA_KEY, null, null,
+            KeyType.DATA_KEY,
+            null,
+            null,
             encryptedDataKeyBase64,
             KeyVersion.VERSION_1
         )
@@ -63,7 +68,9 @@ object ExchangeKeyFactory {
 
     private fun createAttachmentKey(encryptedAttachmentKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.ATTACHMENT_KEY, null, null,
+            KeyType.ATTACHMENT_KEY,
+            null,
+            null,
             encryptedAttachmentKeyBase64,
             KeyVersion.VERSION_1
         )
@@ -71,7 +78,9 @@ object ExchangeKeyFactory {
 
     private fun createTagKey(encryptedTagKeyBase64: String): ExchangeKey {
         return ExchangeKey(
-            KeyType.TAG_KEY, null, null,
+            KeyType.TAG_KEY,
+            null,
+            null,
             encryptedTagKeyBase64,
             KeyVersion.VERSION_1
         )

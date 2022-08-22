@@ -62,7 +62,7 @@ object Version {
             /**
              * [hc-util-sdk-kmp](https://github.com/d4l-data4life/hc-util-sdk-kmp)
              */
-            const val utilSdk = "1.13.0"
+            const val utilSdk = "1.14.0"
         }
     }
 

@@ -64,6 +64,7 @@ See link:{link-repository}/compare/v1.15.0\...v1.16.0[changeset]
 * Android ConstraintLayout 2.1.3 -> 2.1.4.
 * Android Material 1.5.0 -> 1.6.1
 * Android Target SDK 31 -> 33
+* HC Util 1.13.0 -> 1.14.0
 
 == link:{link-repository}/releases/tag/v1.15.0[1.15.0]
 

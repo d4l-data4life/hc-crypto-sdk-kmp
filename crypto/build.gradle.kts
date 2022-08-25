@@ -160,7 +160,12 @@ android {
     sourceSets {
         getByName("main") {
             manifest.srcFile("src/androidMain/AndroidManifest.xml")
-            java.setSrcDirs(setOf("src/androidMain/kotlin"))
+            java.setSrcDirs(
+                setOf(
+                    "src/androidMain/kotlin",
+                    "$buildDir/generated/source/kapt/main"
+                )
+            )
             res.setSrcDirs(setOf("src/androidMain/res"))
         }
 
@@ -186,7 +191,7 @@ val provideTestConfig: Task by tasks.creating {
 
         val config = File(templates, "TestConfig.tmpl")
             .readText()
-            .replace("PROJECT_DIR", projectDir.toPath().toAbsolutePath().toString())
+            .replace("PROJECT_DIR", projectDir.toPath().toAbsolutePath().toString() + "/src")
 
         if (!configs.exists()) {
             if(!configs.mkdir()) {
@@ -200,5 +205,16 @@ val provideTestConfig: Task by tasks.creating {
 tasks.withType(org.jetbrains.kotlin.gradle.dsl.KotlinCompile::class.java) {
     if (this.name.contains("Test")) {
         this.dependsOn(provideTestConfig)
+    }
+}
+
+
+afterEvaluate {
+    tasks.named("compileDebugKotlinAndroid") {
+        dependsOn("kaptKotlinJvm")
+    }
+
+    tasks.named("compileReleaseKotlinAndroid") {
+        mustRunAfter("kaptKotlinJvm")
     }
 }

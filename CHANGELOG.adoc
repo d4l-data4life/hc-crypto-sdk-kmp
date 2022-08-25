@@ -41,6 +41,8 @@ See link:{link-repository}/compare/v1.16.0\...main[changeset]
 
 === Fixed
 
+* KAPT stopped working for Android
+
 === Security
 
 === Bumped

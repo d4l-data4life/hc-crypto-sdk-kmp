@@ -25,3 +25,6 @@ captures/
 
 ## OS X Finder
 .DS_Store
+
+# generated
+crypto/src-gen/commonTest/kotlin/care/data4life/sdk/crypto/test/config/TestConfig.kt
